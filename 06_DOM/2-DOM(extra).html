@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: antiquewhite;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    // const parent = document.querySelectorAll('.parent');
+    // parent.forEach(day => {
+    //     day.style.color = 'pink';
+    // });
+    // console.log(parent.children[0].innerText);
+
+    // for (let i = 0; i < parent.childre.length; i++) {
+    //    const element = array[i];
+        
+    // }
+    const parent = document.querySelector('.parent');
+    // console.log(parent.innerText);
+    console.log(parent.firstElementChild.innerText);
+    console.log(parent.lastElementChild.innerText);    
+
+    // console.log(parent[0].firstElementChild.innerText);
+    console.log('Hey! lorem opsem wowowowowo');
+    const day = document.querySelector('.day');
+    console.log(day.innerText);
+    console.log(day.parentElement.innerText);
+    console.log(day.nextElementSibling.innerText);
+
+    console.log('requireddddd heyyyyyyyyyyyyyyyy!');
+
+    const requiredDay = document.getElementsByClassName('day')[1];
+        console.log(requiredDay.innerText);
+    // NODELIST : LIST OF ALL NODE ELEMENTS (FOR TREE )
+
+    console.log('nodelist:');
+    // console.log(`NODES: ${parent.childNodes}`);
+    // console.log(parent.childNodes);
+    console.log("Nodes: " ,parent.childNodes );
+</script>
+</html>

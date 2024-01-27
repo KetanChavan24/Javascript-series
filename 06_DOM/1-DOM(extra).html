@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        background-color: black;
+      }
+
+      .text {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="main">
+    <div class="text">
+      <h1 id="title">
+        Hey! Ketan <span style="display: none"> test text</span>
+      </h1>
+      <h2>Batman</h2>
+      <h2>Batman</h2>
+      <h2>Batman</h2>
+
+      <!-- CONCEPT OF NODELIST -->
+      <!-- document.querySelectorAll('h2');
+        NodeList(3) [h2, h2, h2]
+        const turnBlue = document.querySelectorAll('h2'); 
+        turnBlue;
+        NodeList(3) [h2, h2, h2]
+        turnBlue[0].style.color = 'blue';
+        'blue'-->
+
+        <!--FOREACH LOOP ON NODELIST  -->
+      <!-- const turnPink = document.querySelectorAll('h2'); undefined
+      turnPink.forEach((l) => {) VM651:1 Uncaught SyntaxError: Unexpected token
+      ')' turnPink.forEach((l) => { l.style.backgroundColor = 'pink'; }); -->
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </body>
+</html>
+
+<!-- THE DIFFERENCE BETWEEN INNERHTML,INNERTEXT  AND TEXTCONTENT -->
+<!-- title.innerHTML
+'Hey! Ketan <span style="display: none;"> test text</span>'
+title.innerText
+'Hey! Ketan'
+title.textContent
+'Hey! Ketan  test text' -->

@@ -27,7 +27,7 @@ const addTwo = (num1,num2) => {
 console.log(addTwo(3,4));
 
 //IMPLICIT METHOD (DOESNT REQUIRE RETURN `KEYWORD`)
-
+//THIS IS ALSO KNOWN AS EXPRESSION
 const multTwo = (num3,num4) => (num3 * num4);
 
 console.log(multTwo(3,4));

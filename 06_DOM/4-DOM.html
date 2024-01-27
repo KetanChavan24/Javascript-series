@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="Language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(anyLang){
+        const li = document.createElement('li');
+        li.innerHTML= `${anyLang}`;
+        document.querySelector('.Language').appendChild(li);
+    }
+
+    addLanguage("Python");
+
+    //OPTIMAL APPROACH AS HERE TREE TRAVERSING IS NOT DONE
+
+    function optiAddLanguage(language){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(language));
+        document.querySelector('ul').appendChild(li);
+    }
+
+    optiAddLanguage("Ruby");
+    optiAddLanguage("golang")
+
+    //EDITING THE ELEMENTS
+    //1.)EDITING THE SECOND LI
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo";A LESS OPTIMIZED APPROACH
+    //MORE OPTIMIZED APPROACH:
+    const newli = document.createElement('li');
+    newli.textContent = "Mojo";
+    secondLang.replaceWith(newli);
+
+    //2.)EDITING THE FIRST LI
+    const firstLang = document.querySelector("li:nth-child(1)");
+    const newfirstli = document.createElement('li');
+    newfirstli.textContent = "typescript";
+    firstLang.replaceWith(newfirstli);
+
+    //3.)EDITING THE LAST LI (DIFF APPROACH):
+    const fourthLang = document.querySelector("li:nth-child(4)");
+    // fourthLang.outerHTML = "<li>Javascript<li>";
+
+
+     //REMOVE APPROACH:(FOR SECOND CHILD):
+     const secLang = document.querySelector('li:nth-child(2)');
+     secLang.remove(); 
+
+</script>
+</html>
