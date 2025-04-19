@@ -2,7 +2,7 @@
 
 let username = "Ketan";
 
-console.log("The original username is " + username);
+console.log("The original username is " + username);//string concatenation
 
 let username2 = username;
 username2 = "Shubhankar";
