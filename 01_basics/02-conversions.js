@@ -1,6 +1,6 @@
 let count = "33";
 
-let countNumber = Number(count);
+let countNumber = Number(count);//Number() method used for conversion from string to number 
 console.log(countNumber);
 console.log(typeof(countNumber));
 
