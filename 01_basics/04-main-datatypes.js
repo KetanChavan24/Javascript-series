@@ -1,5 +1,5 @@
 // Return type of variables in JavaScript
-// 1) Primitive Datatypes
+// 1) Primitive Datatypes(immutsble)
 //        Number => number
 //        String  => string
 //        Boolean  => boolean
@@ -8,7 +8,7 @@
 //        Symbol  =>  symbol
 //        BigInt  =>  bigint
 
-// 2) Non-primitive Datatypes
+// 2) Non-primitive Datatypes(mutable)
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
