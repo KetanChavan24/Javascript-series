@@ -1,9 +1,9 @@
 //NULLISH COALESGING OPERATOR (??): USED IN CASE OF 'NULL' AND 'UNDEFINED' VALUE.
 //IT ALWAYS PRINTS THE VALUE BEFORE THE QUESTION MARKS EXCEPT FOR 'NULL' AND 'UNDEFINED' VALUES.
 
-let val1 = 10 ?? 20;
-let val2 = null ?? 10;
-let val3 = undefined ?? 34;
+let val1 = 10 ?? 20;// 10 as it did'nt trigger the fallback
+let val2 = null ?? 10;// 10 as null triggered the fallback
+let val3 = undefined ?? 34;// 34 as the fallback was triggered due to undefined itself!
 console.log(val1);
 console.log(val2);
 console.log(val3);
