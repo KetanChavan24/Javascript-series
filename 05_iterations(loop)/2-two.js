@@ -15,3 +15,4 @@ do{
     console.log(`${score}`);
     score++;
 }while(score <= 10)
+//the loop will run only once by giving the output: 11 and then terminate 
