@@ -12,17 +12,24 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-// const myBooks = books.filter((book) => book.genre === 'Fiction');
+ const myBooks = books.filter((book) => book.genre === 'Fiction');
+console.log(myBooks);
+//output:
+//[
+//  { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//  { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 }
+//]
 
-// console.log(myBooks);
 
-// const requiredBook = books.filter((book) => {
-//     return book.genre === 'History';
-// });
+const requiredBook = books.filter((book) => {
+     return book.genre === 'History';
+ });
+
+console.log(reuiredbook)//Guess the output
 
 const MyBook = books.filter((bk) => { 
     return ((bk.genre === 'History') && (bk.publish >= 1995))
 });
 
-// console.log(MyBook);
+console.log(MyBook);//Guess the output
 
