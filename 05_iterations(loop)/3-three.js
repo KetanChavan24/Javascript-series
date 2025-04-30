@@ -12,8 +12,14 @@ const country = new Map();
 country.set('In',"India");
 country.set('USA',"United States Of America");
 country.set('Fr',"France");
-
 console.log(country);
+//Output: Map(3) {
+//  'In' => 'India',
+//  'USA' => 'United States Of America',
+//  'Fr' => 'France'
+//}
+
+
 
 for (const [key,value] of country) {
     // console.log(`${key,value}`);
