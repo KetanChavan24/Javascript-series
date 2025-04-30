@@ -1,16 +1,19 @@
 const myDate = new Date;
 
-console.log(myDate);
-console.log(myDate.toString());
-console.log(myDate.toISOString());
-console.log(myDate.toUTCString());
-console.log(myDate.toLocaleDateString());
-console.log(myDate.toLocaleString());
-console.log(typeof myDate);//Object
 
-const newDate = new Date('2024','0','23');//month is 0 ;i.e months range from 0-11
-console.log(newDate);
-console.log(newDate.toLocaleDateString());
+console.log(myDate);             // Current date and time
+console.log(myDate.toString());  // Default string representation of the date
+console.log(myDate.toISOString()); // ISO 8601 formatted date string
+console.log(myDate.toUTCString()); // UTC string representation of the date
+console.log(myDate.toLocaleDateString()); // Date formatted according to local settings
+console.log(myDate.toLocaleString()); // Date and time formatted according to local settings
+console.log(typeof myDate); // "object" because Date is an object in JavaScript
+
+
+const newDate = new Date('2024', '0', '23');
+console.log(newDate);                // Date for January 23, 2024
+console.log(newDate.toLocaleDateString()); // Localized date string for January 23, 2024
+
 
 //Also as date is an object it has multiple objects or prototypes or properties.
 console.log(newDate.getTime());
@@ -18,4 +21,4 @@ console.log(newDate.getMonth());
 
 //Timestamp can be used for calculating time for hotels ,quizes and many more.
 let myTimestamp = Date.now();
-console.log(myTimestamp);
+console.log(myTimestamp); // Returns the current timestamp in milliseconds
