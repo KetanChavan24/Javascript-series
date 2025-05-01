@@ -2,18 +2,18 @@
 
 const nums = [1,2,3,4];
 
-// const total = nums.reduce(function (accumulator,currentvalue){
-//     console.log(`accumulator: ${accumulator} , currentvalue: ${currentvalue}`);
-//     return accumulator + currentvalue;
-// },0)//accumulator value = 0(initial value)
+const total = nums.reduce(function (accumulator,currentvalue){
+    console.log(`accumulator: ${accumulator} , currentvalue: ${currentvalue}`);
+     return accumulator + currentvalue;
+ },0)//accumulator value = 0(initial value)
 
 
-//ARROW FUNCTION
-// const total = nums.reduce((accumulator,currentvalue) => {
-//     return accumulator + currentvalue;
-// },0);
+ARROW FUNCTION
+ const total = nums.reduce((accumulator,currentvalue) => {
+     return accumulator + currentvalue;
+ },0);
 
-// console.log(total);
+ console.log(total);
 
 
 //ARROW FUNCTION IN ONE LINE
